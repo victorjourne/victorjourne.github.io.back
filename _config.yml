@@ -1,5 +1,5 @@
-title: devlopr jekyll
-subtitle: A Jekyll theme built for Developers
+title: Victor Journé
+subtitle: Data Scientist
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a Jekyll Theme Built For Developers
 
@@ -9,79 +9,106 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: Blog
       url: /blog
-    - text: Shop
-      url : /shop/
+    #- text: Shop
+    #  url : /shop/
     - text: About Me
       url: /about/
-    - text: Contact Me
-      url : /contact/
+    #- text: Contact Me
+    #  url : /contact/
     - text: Styleguide
       url: /styleguide/
-    
 
-# Edit these details 
+
+# Edit these details
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hi, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.  
-author_email: "johndoe@gmail.com"
-author_location: India
-author_website_url: "http://johndoe.com"
+#author: John Doe
+author_bio: Hi, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.
+author_email: "journe.victor@gmail.com"
+author_location: Paris
 
-author_work_experiences: 
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+author_work_experiences:
+            - company_name: French Ministry of Interior
+              company_logo: mi.png
+              company_url: https://www.interieur.gouv.fr/
+              designation: Data Scientist (2019 - Now)
+              description: Led multiple projects in Computer Vision, Natural Language processing and full stack development.
               visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: Qopius Technology
+              company_logo: qopius.jpeg
+              company_url: https://qopius.com/
+              designation: Data Scientist (2017 - 2019)
+              description: Achieved applied researches in attention learning, graphs matching and deep-learning detection models.
+              visibility: true
+            - company_name: Engie
+              company_logo: engie.png
+              company_url: https://engie.com/
+              designation: Quantitative Analyst (2015 - 2017)
+              description: Found profitable strategies on the Imbalance and Intraday Power Market.
               visibility: true
 
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: ensae.png
+                college_name: ENSAE
+                college_url: https://www.ensae.fr/formation/masteres-specialises/data-science/
+                college_degree: Master of Data Science (2016-2017)
+                description: Optimization for Machine Learning, Online Learning, Hidden Markov Models, Compressed Sensing, Deep Learning.
+                visibility: true
+              - college_logo: cranfield.png
+                college_name: Cranfield University (2014-2015)
+                college_url: https://www.cranfield.ac.uk/courses/taught/autonomous-vehicle-dynamics-and-control
+                college_degree: Master of Data Science
+                description: Double diploma about autonomous vehicles. Control Theory, Dynamics, Decision-Making and Data Fusion.
+                visibility: true
+              - college_logo: ecn.png
+                college_name: Ecole Centrale de Nantes (2013-2015)
+                college_url: https://www.ec-nantes.fr/
+                college_degree: Master of Science
+                description: Mathematics (analysis, probabilities, optimization), Fluid Dynamics, Control and Automation and Signal Theory. Simulation and Virtual Reality.
                 visibility: true
 
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: logo-ridoc.png
+                project_title: RIDOC
+                project_description: A Search Engine for the French Mininstery of Interior
+                project_url: http://146.59.203.11
                 visibility: true
-              - project_thumbnail: programmingebooks.png
-                project_title: Programming Ebooks
-                project_description: A Platform to easily find and read programming books
-                project_url: https://programmingebooks.com
+              - project_thumbnail: logo-ia-flash.png
+                project_title: IA Flash
+                project_description: A platform to find the brand/model of cars
+                project_url: https://iaflash.fr
                 visibility: true
+              - project_thumbnail: Emoji.png
+                project_title: Emotion classifier
+                project_description: School project to classify facial emotion with CNN
+                project_url: https://github.com/victorjourne/facial_emotion_CNN/blob/master/README.md
+                visibility: true
+              - project_thumbnail: logo-spark.png
+                project_title:
+                project_description: School project, Spark for the logistic regression
+                project_url: https://github.com/victorjourne/logistic_regression_spark/blob/master/ELTDM_CodeSource_Lelievre_Journe_public.ipynb
+                visibility: false
 
 # social links
-twitter_username: johndoe
-github_username:  johndoe
-facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
-instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+#twitter_username: johndoe
+github_username:  victorjourne
+#facebook_username: johndoe
+linkedin_username: victorjourne
+#behance_username: johndoe
+#instagram_username: johndoe
+#medium_username: johndoe
+#telegram_username: johndoe
+#dribbble_username: johndoe
+#flickr_username: johndoe
 
 #for comments using disqus
-disqus_shortname: sujay-kundu  
+disqus_shortname: sujay-kundu
 
 # wakatime username (coding activity)
-wakatime_username: sujaykundu777
+#wakatime_username: sujaykundu777
 
 # formspree (contact form)
-formspree_email: johndoe@gmail.com
+formspree_email: journe.victor@gmail.com
 
 # syntax highlighter
 markdown: kramdown
@@ -89,7 +116,7 @@ highlighter: rouge
 permalink: pretty
 
 # google analytics
-google_analytics: UA-46783401-10 
+google_analytics: UA-46783401-10
 
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
@@ -104,9 +131,10 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-algolia
+  - jemoji
 # - jekyll-archives
 
-# algolia search 
+# algolia search
 algolia:
   application_id: D9WA1YKTRQ
   index_name: blog_posts # You can replace that with whatever name you want
@@ -119,7 +147,7 @@ paginate: 8
 per_page: 4
 paginate_path: "/blog/page/:num/"
 
-# minify 
+# minify
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
