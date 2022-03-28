@@ -6,6 +6,7 @@ date: '2019-05-21 14:35:23 +0530'
 category: guides
 summary: Deployment Guide for devlopr-jekyll blog using Github Pages and Travis CI
 thumbnail: deploy-using-github-pages-and-travis.png
+published: false
 ---
 
 This guide assumes that you already have created your blog and tested locally. If not please follow this tutorial : [Create a Blog using devlopr jekyll](https://devlopr.netlify.com/guides/2017/11/19/build-a-blog-using-devlopr-jekyll). Then come back and proceed with the deployment process.
@@ -18,18 +19,18 @@ We might need to instruct Travis CI to follow deployment instructions. Copy the 
 language: ruby
 cache: bundler
 
-# Travis will build the site from gh-pages branch 
-# and deploy the content to master branch 
+# Travis will build the site from gh-pages branch
+# and deploy the content to master branch
 # use gh-pages branch to serve for github pages
 # master branch will be used for deployment
 
 branches:
   only:
   - gh-pages
-script: 
+script:
   - JEKYLL_ENV=production bundle exec jekyll build --destination site
 
-# You need to generate a Personal Access Token 
+# You need to generate a Personal Access Token
 # https://github.com/settings/tokens
 # Add this token in environment variable GITHUB_TOKEN in Travis CI repo settings
 
@@ -57,7 +58,7 @@ deploy:
 
 All we are doing is telling Travis to pick up files from our **gh-pages** branch and push the build files to **master** branch.
 
-##### Generate a New Github Personal Access Token 
+##### Generate a New Github Personal Access Token
 
 We need this token as a Environment Variable in Travis. For Travis can automatically login as you, and finish its job of building your site and pushing it to your repo's master branch.
 
@@ -65,23 +66,23 @@ Go to [Github Generate a New Token](https://github.com/settings/tokens) Page.
 
 ![deploy using travis](/assets/img/posts/d1.png){:class="img-fluid"}
 
-Create a new Access Token 
+Create a new Access Token
 
 ![deploy using travis](/assets/img/posts/d2.png){:class="img-fluid"}
 
 
-##### Configure Travis 
+##### Configure Travis
 
-Go to [Travis](https://travis.org) and Toggle the repository access to use Travis 
+Go to [Travis](https://travis.org) and Toggle the repository access to use Travis
 
 ![deploy using travis](/assets/img/posts/d3.png){:class="img-fluid"}
 
-Go to the repository settings page and Add Environment Variable 'GITHUB_TOKEN' 
+Go to the repository settings page and Add Environment Variable 'GITHUB_TOKEN'
 ![deploy using travis](/assets/img/posts/d4.png){:class="img-fluid"}
 
-##### Push your changes to Github 
+##### Push your changes to Github
 
-Commit your local changes in gh-pages branch 
+Commit your local changes in gh-pages branch
 
 `git add .`
 `git commit -m "added new post"`

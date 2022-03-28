@@ -6,6 +6,8 @@ date: '2017-03-29'
 category: IA
 summary: Recommender system implementation for Netflix movies, based on user network. This is the original problem of matrix completation with a graph term.
 thumbnail: netflix_comunity_graph.png
+language: EN
+tag: EN
 ---
 ## Matrix completion on graphs
 

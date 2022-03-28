@@ -6,6 +6,7 @@ date: '2019-05-20 14:35:23 +0530'
 category: guides
 summary: Getting Started - How to build a blog using devlopr-jekyll and Github Pages
 thumbnail: devlopr.png
+published: false
 ---
 
 If you are a developer, who want a fast static website with no cost for hosting/domain stuff. This guide will help you setup a blog for you for free using [devlopr-jekyll](https://github.com/sujaykundu777/devlopr-jekyll.git) theme
@@ -14,7 +15,7 @@ Before Proceeding Lets Setup Our Development Environment :
 
 ##### **Step 1** - Setting up Development Environment
 
-We need [ruby](https://www.ruby-lang.org/) and Bundler to build our site locally. You can check out this [Guide](https://www.ruby-lang.org/en/downloads/) to install the same for your OS. 
+We need [ruby](https://www.ruby-lang.org/) and Bundler to build our site locally. You can check out this [Guide](https://www.ruby-lang.org/en/downloads/) to install the same for your OS.
 
 Install Ruby
 
@@ -22,7 +23,7 @@ Install Ruby
 ruby -v
 ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux-gnu]
 ```
-Install Bundler 
+Install Bundler
 
 `gem install bundler`
 
@@ -40,23 +41,23 @@ Go to [devlopr starter](https://github.com/sujaykundu777/devlopr-starter). Click
 
 ![devlopr starter template](/assets/img/posts/devlopr-starter.png){:class="img-fluid"}
 
-Create a new repo with name as "**yourusername.github.io**" replacing yourusername with your github username. 
+Create a new repo with name as "**yourusername.github.io**" replacing yourusername with your github username.
 
  ![devlopr starter template](/assets/img/posts/1.png){:class="img-fluid"}
 
 
 **Note :**
-You can use any other name like "my-blog" but then , if you are using github pages for deployment. your site will be built at the subdomain - yourusername.github.io/my-blog. 
+You can use any other name like "my-blog" but then , if you are using github pages for deployment. your site will be built at the subdomain - yourusername.github.io/my-blog.
 
-##### **Step 3** - Clone your repo locally 
+##### **Step 3** - Clone your repo locally
 
-You will get the clone url from here: 
+You will get the clone url from here:
 
 ![devlopr starter template](/assets/img/posts/3.png){:class="img-fluid"}
 
 `git clone https://github.com/yourusername/yourusername.github.io.git`
 
-##### **Step 3** - Make all your changes Locally 
+##### **Step 3** - Make all your changes Locally
 
 Make all your changes locally
 
@@ -67,12 +68,12 @@ Open the files using VSCode and edit **_config.yml** and edit with your details:
 
 ![devlopr starter template](/assets/img/posts/4.png){:class="img-fluid"}
 
-- **_config.yml** file - replace with your own details 
-- **_posts** - Add your blog posts here 
+- **_config.yml** file - replace with your own details
+- **_posts** - Add your blog posts here
 - **_includes** - You can replace the contents of the files with your data. (contains widgets)
 - **_assets/img** - Add all your images here
 
-##### **Step 4** - Install the dependencies 
+##### **Step 4** - Install the dependencies
 
 `$ bundle update`
 `$ bundle install`
@@ -109,8 +110,3 @@ Push your changes to Github
 ##### **Step 7** - Congrats - Your Site is Live
 
 You can visit your blog at [http://yourusername.github.io](http://yourusername.github.io)
-
-
-
-
-

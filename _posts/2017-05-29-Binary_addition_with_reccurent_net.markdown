@@ -6,6 +6,8 @@ date: '2017-05-29 14:35:23 +0530'
 category: IA
 summary: Understand Recurrent Neural Network (RNN) with Keras implementation of a binary addition.
 thumbnail: RNN_unfold.png
+language: EN
+tag: EN
 ---
 
 

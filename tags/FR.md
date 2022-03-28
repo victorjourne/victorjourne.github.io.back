@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Jekyll
+title: FR
 permalink: /blog/tags/jekyll
 ---
- 
+
 <h5> Posts by Tag : {{ page.title }} </h5>
 
 <div class="card">

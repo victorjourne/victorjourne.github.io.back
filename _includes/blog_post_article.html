@@ -8,8 +8,13 @@
                 <span itemprop="name">{{ page.author }}</span>
             </span>{% endif %} at
             <time datetime="{{ page.date }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+            {% if page.language %}
+            <p class="post-meta">
+              [{{ page.language }}]
+            </p>
+            {% endif %}
         </p>
-        <span class="disqus-comment-count" data-disqus-identifier="{{ page.url }}"></span>     
+        <span class="disqus-comment-count" data-disqus-identifier="{{ page.url }}"></span>
         <div class="post-categories">
             {% if post %} {% assign categories = post.categories %} {% else %} {% assign categories = page.categories %} {% endif %}
             Category : {% for category in categories %}
@@ -19,9 +24,9 @@
     </div>
 
     <div class="card-body" itemprop="articleBody">
-        <img class="card-img-top" src="/assets/img/posts/{{ page.thumbnail }}" alt="{{ post.title }}"> 
+        <img class="card-img-top" src="/assets/img/posts/{{ page.thumbnail }}" alt="{{ post.title }}">
         <br/> <br/>
-        {{ content }} 
+        {{ content }}
     </div>
 
     <div id="disqus_thread"></div>

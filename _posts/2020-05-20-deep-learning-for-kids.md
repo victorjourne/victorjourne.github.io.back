@@ -4,6 +4,8 @@ title: Deep learning for kids
 author: Victor Journé
 date: '2020-05-20 14:35:23 +0530'
 category: IA
+language: FR
+tag: FR
 summary: A simple explanation of the story, the goals and the power of deep-learning.
 thumbnail: ia-kids/cerveau-humain-type-neurone-1024x640-853x640.jpg
 ---

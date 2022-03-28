@@ -13,18 +13,18 @@ urls:
     #  url : /shop/
     - text: About Me
       url: /about/
-    #- text: Contact Me
-    #  url : /contact/
-    - text: Styleguide
-      url: /styleguide/
+    - text: Contact Me
+      url : /contact/
+    #- text: Styleguide
+    #  url: /styleguide/
 
 
-# Edit these details
+# Edit theses details
 
 author_logo: profile.png
 #author: John Doe
-author_bio: Hi, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.
-author_email: "journe.victor@gmail.com"
+author_bio: Welcome to my personal site! Please find some articles or projects that I would like to share!
+#author_email: "journe.victor@gmail.com"
 author_location: Paris
 
 author_work_experiences:
@@ -71,7 +71,7 @@ author_project_details:
               - project_thumbnail: logo-ridoc.png
                 project_title: RIDOC
                 project_description: A Search Engine for the French Mininstery of Interior
-                project_url: http://146.59.203.11
+                project_url: http://ridoc.fr
                 visibility: true
               - project_thumbnail: logo-ia-flash.png
                 project_title: IA Flash
@@ -108,7 +108,7 @@ disqus_shortname: sujay-kundu
 #wakatime_username: sujaykundu777
 
 # formspree (contact form)
-formspree_email: journe.victor@gmail.com
+formspree_email: mpzblqkb
 
 # syntax highlighter
 markdown: kramdown
